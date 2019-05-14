@@ -1,0 +1,235 @@
+body{
+	font-family: 'arial', helvetica, impact;
+	font-size: 15px;
+	line-height: 1.5;
+	padding: 0;
+	background-color:#f4f4f4;
+}
+
+.navbar-brand .logo{
+	height: 30px;
+	width: 60px;
+}
+
+.navbar a:hover{
+	background-color: #0000FF;
+	color: #000;
+	border-radius: 6px;
+}
+/*global*/
+
+.container{
+	color:#f4f4f4;
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+}
+
+
+.boton{
+	height:38px
+	background:#e8491d;
+	border-bottom:0;
+	padding-left:20px;
+	padding-right:20px;
+	color:#ffffff;
+}
+
+/* showcase */ 
+
+#showcase{
+	margin:auto;
+	max-width: auto;
+	padding-bottom:10px;
+	min-height:1090px;
+	background:url('../images/podium girls 2018.jpg') no-repeat -80px -222px;
+	background-color: #FFFFFF;
+	text-align:center;
+}
+
+#showcase1{
+	margin:auto;
+	max-width: auto;
+	padding-bottom:10px;
+	min-height:600px;
+	background:url('../voluntiers/feed all.jpg') no-repeat -390px -1152px;
+	background-color: #FFFFFF;
+	text-align:center;
+}
+
+
+
+.p-close p {
+	margin-bottom: -5px;
+}
+
+#showcase h3{
+	margin-top:801px;
+	margin-bottom:2px;
+	background-color: #FFFFFF;
+}
+
+#About{	
+	background-color: #FFFFFF;
+	padding: 1px;
+}
+
+#About h3{
+	text-align:justify;
+	margin:20px 105px 20px 105px;
+}
+
+
+
+/* boxex */
+
+#contact{
+	background:#0000A0;
+	color: #f4f4f4;
+	padding-top: 60px;
+}
+
+#contact1{
+	background:#0000A0;
+	color: #f4f4f4;
+	padding-top: 60px;
+}
+
+#contact .box{
+	text-align:center;
+	max-width:90%;
+	padding:5px;
+	margin-bottom:10px;
+	margin-top:100px;
+}
+
+#contact1 .box{
+	text-align:center;
+	max-width:90%;
+	padding:5px;
+	margin-bottom:200px;
+	margin-top:10px;
+}
+
+#boxes{
+	background:#0000A0;
+	color: #f4f4f4;
+	padding-top: 20px;
+}
+
+#boxes .box{
+	text-align:center;
+	width:3%;
+	padding:20px;
+}
+
+.box{
+	margin-top: 21px;
+	margin-bottom: 21px;
+	margin-left: 10px;
+	border:1px #f4f4f4 solid;
+	border-radius: 9px;
+}
+
+.cartel{
+	width: 600px;
+	margin:20px;
+	padding: 50px;
+	border:1px #f4f4f4 solid;
+	border-radius: 9px;
+}
+
+
+#sponsors{
+	max-width: 1100px;
+	margin: auto;
+	background:#FFFFFF;
+	color: #C0C0C0;
+	padding-top: 20px;
+}
+
+#sponsors .patrocinador{
+	text-align:center;
+	width:20%;
+	padding:10px;
+}
+
+.patrocinador{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border:none;
+}	
+.patrocinador_2{
+	margin-top: 5px;
+	margin-bottom: 15px;
+	border:none;
+}	
+
+.center{
+	text-align:center;
+	margin:auto;
+}
+
+.bg-dark{
+	background:#333;
+	color: #808080;
+	min-height:30px;
+}
+
+@media(max-width: 450px){
+		#About h3{
+		padding-top:15px;
+		padding-bottom: 15px;
+		text-align:center;
+		margin:auto;
+	}
+
+	#showcase{
+		margin:auto;
+		max-width: auto;
+		padding-bottom:10px;
+		background:url('../images/podium girls 2018.jpg') no-repeat -780px -222px;
+		background-color: #C0C0C0;
+		text-align:center;
+	}
+	#showcase1{
+		background:url('../voluntiers/feed all.jpg') no-repeat -810px -1152px;
+	}
+
+	
+}
+
+
+
+
+
+/* media queries */
+/* #f4f4f4 dark grey White	#FFFFFF*/
+/* newaletter.Blue	#0000FF
+DarkBlue	#0000A0
+LightBlue	#ADD8E6
+Purple	#800080 #FF0000 red, #35424a dark grey. 
+#ffffff white for dots.  #ddd light grey 
+#8B0000 dark red, tomato red #FF6347 
+lightgray / lightgrey	#D3D3D3	rgb(211,211,211)
+silver	               #C0C0C0	rgb(192,192,192)
+darkgray / darkgrey	  #A9A9A9	rgb(169,169,169)
+gray / grey	         #808080	rgb(128,128,128)
+dimgray / dimgray	#696969	rgb(105,105,105)  
+Aqua	#00FFFF	rgb(0, 255, 255)
+Teal	#008080	rgb(0, 128, 128)
+Blue	#0000FF	rgb(0, 0, 255)
+Navy	#000080	rgb(0, 0, 128)       */
+
+
+
+/* header.#000000 black. #35424a dark grey. #0c00ff blue. #ffffff white for dots, #e8491d orange  */
+
+
+/* esta me da la altura de la banda donde estan los links */
+
+
+/* me cambia la lista del menu. padding:0 10px[separa los nombres]0 5px;*/
+
+
+/* me mueve todo el navegador. margin-top sube los links del menu hacia arriba pero con -20px*/
