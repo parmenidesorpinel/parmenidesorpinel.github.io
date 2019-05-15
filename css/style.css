@@ -184,6 +184,11 @@ body{
 		margin:auto;
 	}
 
+	#About h4{
+	text-align:justify;
+	margin:auto;
+}
+
 	#showcase{
 		margin:auto;
 		max-width: auto;
@@ -193,7 +198,7 @@ body{
 		text-align:center;
 	}
 	#showcase1{
-		background:url('../voluntiers/feed all.jpg') no-repeat -810px -1152px;
+		background:url('../voluntiers/feed all.jpg') no-repeat -960px -1152px;
 	}
 
 	
