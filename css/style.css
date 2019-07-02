@@ -176,7 +176,8 @@ body{
 	min-height:30px;
 }
 
-@media(max-width: 450px){
+@media(max-width: 450px)
+{
 		#About h3{
 		padding-top:15px;
 		padding-bottom: 15px;
@@ -187,7 +188,7 @@ body{
 	#About h4{
 	text-align:justify;
 	margin:auto;
-}
+	}
 
 	#showcase{
 		margin:auto;
@@ -199,6 +200,11 @@ body{
 	}
 	#showcase1{
 		background:url('../voluntiers/feed all.jpg') no-repeat -960px -1152px;
+	}
+
+	#stravaweather{
+		text-align:center;
+		max-width: auto;
 	}
 
 	
