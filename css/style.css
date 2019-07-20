@@ -210,9 +210,13 @@ body{
 		max-width: auto;
 	}
 
-	#containerclick{
+	#containerclick .btn-link{
 		text-align:center;
 		max-width: auto;
+	}
+
+	#btn-link{
+		
 	}
 
 
