@@ -70,15 +70,16 @@ body{
 }
 
 #About{	
-	background-color: #FFFFFF;
+	text-shadow: 2px 2px 9px black;
 	padding: 1px;
-	margin-top: 45px;
+	margin-top: 333px;
 	margin-bottom: 45px;
 }
 
 #About h4{
-	text-align:justify;
-	margin:20px 105px 20px 105px;
+	text-align:center;
+	font-size: 36px;
+	margin:120px 105px 20px 105px;
 }
 
 
