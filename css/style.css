@@ -193,18 +193,29 @@ body{
 	min-height:30px;
 }
 
-@media(max-width: 450px)
-{
+@media screen and (max-width: 450px){
 		#About h3{
 		padding-top:15px;
 		padding-bottom: 15px;
 		text-align:center;
 		margin:auto;
 	}
+		#intro{
+	text-shadow: 2px 2px 9px black;
+	padding: none;
+	margin-top: 133px;
+	margin-bottom: 45px;
+}
+		#intro h4{
+	text-align:center;
+	font-size: 24px;
+	margin:none;
+	padding: none;
+	}
 
 	#About h4{
-	text-align:justify;
-	margin:auto;
+		text-align:justify;
+		margin:auto;
 	}
 
 	#showcase{
