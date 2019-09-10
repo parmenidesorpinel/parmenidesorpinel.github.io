@@ -69,10 +69,23 @@ body{
 	background-color: #FFFFFF;
 }
 
-#About{	
+#intro{
 	text-shadow: 2px 2px 9px black;
 	padding: 1px;
 	margin-top: 333px;
+	margin-bottom: 45px;
+}
+#intro h4{
+	text-align:center;
+	font-size: 36px;
+	margin:63px 63px;
+	padding: 36px 36px;
+}
+
+#About{	
+	text-shadow: 2px 2px 9px black;
+	padding: 1px;
+	margin-top: 33px;
 	margin-bottom: 45px;
 }
 
