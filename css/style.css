@@ -28,7 +28,7 @@ body{
 
 .boton{
 	height:38px
-	background:#e8491d;
+	background: #e8491d;
 	border-bottom:0;
 	padding-left:20px;
 	padding-right:20px;
@@ -42,7 +42,7 @@ body{
 	max-width: auto;
 	padding-bottom:10px;
 	min-height:1090px;
-	background:url('../images/podium girls 2018.jpg') no-repeat -80px -180px;
+	background:url('../images/Pro podium watermark.jpg') no-repeat -80px -180px;
 	background-color: #FFFFFF;
 	text-align:center;
 }
