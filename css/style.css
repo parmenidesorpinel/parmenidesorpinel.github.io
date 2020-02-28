@@ -29,7 +29,7 @@ body{
 #container{
 	max-width: auto;
 	padding-bottom:10px;
-	text-align:left;
+	text-align:center;
 	min-height: auto;
 	/*color:#f4f4f4;
 	width:auto;
@@ -55,9 +55,9 @@ body{
 .showcase{
 	color:#f4f4f4;
 	width:auto;
-	background:url('../images/Pro podium watermark.jpg') no-repeat 0px 0px;
+	/*background:url('../images/Pro podium watermark.jpg') no-repeat 0px 0px;
 	background-size: cover;
-	min-height: 620px;
+	min-height: 620px;*/
 	/*margin:auto;
 	max-width: auto;
 	padding-bottom:10px;
@@ -66,6 +66,12 @@ body{
 	background-size: cover;
 	background-color: #FFFFFF;
 	text-align:center; */
+	
+}
+
+.showcase img{
+	width: 100%;
+	background-size: cover;
 }
 
 #showcase1{
@@ -89,16 +95,18 @@ body{
 	background-color: #FFFFFF;
 }
 
-#intro{
+.intro{
 	text-shadow: 2px 2px 9px black;
-	padding: 1px;
+	padding: 6px;
+	min-width: 360px;
+	max-width: 600px;
 	/*margin-top: 333px;
 	margin-bottom: 45px;*/
 }
-#intro h4{
+.intro h4{
 	text-align:center;
 	font-size: 21px;
-	margin-top:190px;
+	margin-top:auto;
 }
 
 #About{	
@@ -220,17 +228,15 @@ body{
 		margin:auto;
 	}
 	
-	igm{
-		width: 100%;
-	}
+
 	
-	#intro{
+	.intro{
 	text-shadow: 2px 2px 9px black;
 	padding: none;
 	margin-top: 63px;
 	margin-bottom: 45px;
 }
-	#intro h4{
+	.intro h4{
 	text-align:center;
 	font-size: 24px;
 	margin:none;
@@ -238,18 +244,21 @@ body{
 	}
 
 	#About h4{
-		text-align:justify;
+		text-align:center;
 		margin:auto;
 	}
 
 	#showcase{
-		margin:auto;
-		max-width: auto;
-		padding-bottom:10px;		
-		background:url('../images/Pro podium watermark.jpg') no-repeat 0px 0px;
-		background-color: #C0C0C0;
-		text-align:center;
+		margin: none;
+	
 	}
+	
+	.showcase img{
+		widows: 100%;
+	}
+	
+	
+	
 	#showcase1{
 		background:url('../voluntiers/feed all.jpg') no-repeat -960px -1152px;
 	}
