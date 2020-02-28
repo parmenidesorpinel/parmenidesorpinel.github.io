@@ -18,11 +18,19 @@ body{
 }
 /*global*/
 
-.container{
-	color:#f4f4f4;
-	width:80%;
+#container{
+	/*color:#f4f4f4;
+	width:auto;
 	margin:auto;
-	overflow:hidden;
+	overflow:hidden;*/
+	margin:auto;
+	max-width: auto;
+	padding-bottom:10px;
+	min-height:40px;
+	background:url('../images/Pro podium watermark.jpg') no-repeat 0px 0px;
+	background-size: cover;
+	background-color: #FFFFFF;
+	text-align:center; 
 }
 
 
@@ -37,15 +45,19 @@ body{
 
 /* showcase */ 
 
-#showcase{
+.showcase{
+	color:#f4f4f4;
+	width:auto;
 	margin:auto;
+	overflow:hidden;
+	/*margin:auto;
 	max-width: auto;
 	padding-bottom:10px;
 	min-height:40px;
 	background:url('../images/Pro podium watermark.jpg') no-repeat 0px 0px;
 	background-size: cover;
 	background-color: #FFFFFF;
-	text-align:center;
+	text-align:center; */
 }
 
 #showcase1{
@@ -64,8 +76,8 @@ body{
 	margin-bottom: -5px;
 }
 
-#showcase h3{
-	margin-top:801px;
+.showcase h3{
+	margin-top:401px;
 	margin-bottom:2px;
 	background-color: #FFFFFF;
 }
