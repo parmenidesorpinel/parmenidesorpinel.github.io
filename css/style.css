@@ -41,8 +41,9 @@ body{
 	margin:auto;
 	max-width: auto;
 	padding-bottom:10px;
-	min-height:1090px;
-	background:url('../images/Pro podium watermark.jpg') no-repeat -80px -180px;
+	min-height:40px;
+	background:url('../images/Pro podium watermark.jpg') no-repeat 0px 0px;
+	background-size: cover;
 	background-color: #FFFFFF;
 	text-align:center;
 }
@@ -53,7 +54,7 @@ body{
 	padding-bottom:10px;
 	min-height:600px;
 	background:url('../voluntiers/feed all.jpg') no-repeat -840px -1152px;
-	background-color: #FFFFFF;
+	background-color: #F91317;
 	text-align:center;
 }
 
