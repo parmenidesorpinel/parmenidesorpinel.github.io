@@ -52,7 +52,7 @@ body{
 	margin:auto;
 	max-width: auto;
 	padding-bottom:10px;
-	min-height:600px;
+	/*min-height:600px;*/
 	background:url('../voluntiers/feed all.jpg') no-repeat -840px -1152px;
 	background-color: #F91317;
 	text-align:center;
@@ -223,7 +223,7 @@ body{
 		margin:auto;
 		max-width: auto;
 		padding-bottom:10px;
-		background:url('../images/podium girls 2018.jpg') no-repeat -780px -222px;
+		background:url('../images/Pro podium watermark.jpg') no-repeat 0px 0px;
 		background-color: #C0C0C0;
 		text-align:center;
 	}
