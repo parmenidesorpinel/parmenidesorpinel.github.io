@@ -163,14 +163,15 @@ body{
 	color: #C0C0C0;
 }
 
-/*.box{
+#boxes .box{
 	width: 20%;
+	padding: 15px;
 	margin-top: 21px;
 	margin-bottom: 21px;
 	margin-left: 10px;
 	border:1px #f4f4f4 solid;
 	border-radius: 9px;
-}*/
+}
 
 .cartel{
 	width: 600px;
@@ -225,6 +226,16 @@ body{
 		text-align:center;
 		margin:auto;
 	}
+	
+	#boxes .box{
+	width: 96%;
+	margin: 3px 3px;
+	/*padding: 15px;
+	margin-top: 21px;
+	margin-bottom: 21px;
+	margin-left: 10px;
+	border:1px #f4f4f4 solid;
+	border-radius: 9px;*/
 	
 
 	
