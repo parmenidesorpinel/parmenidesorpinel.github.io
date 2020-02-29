@@ -42,7 +42,7 @@ body{
 
 
 .boton{
-	height:38px
+	height:18px
 	background: #e8491d;
 	border-bottom:0;
 	padding-left:20px;
@@ -154,25 +154,23 @@ body{
 	margin-top:10px;
 }
 
-#boxes{
-	background:#0000A0;
-	color: #f4f4f4;
-	padding-top: 20px;
-}
 
-#boxes .box{
+#boxes {
+	display: flex;
+	align-items: center;
 	text-align:center;
-	width:3%;
-	padding:20px;
+	width:100%;
+	color: #C0C0C0;
 }
 
-.box{
+/*.box{
+	width: 20%;
 	margin-top: 21px;
 	margin-bottom: 21px;
 	margin-left: 10px;
 	border:1px #f4f4f4 solid;
 	border-radius: 9px;
-}
+}*/
 
 .cartel{
 	width: 600px;
@@ -209,12 +207,12 @@ body{
 	text-align:center;
 }	
 
-.center{
+/*.center{
 	text-align:center;
 	margin:auto;
-}
+}*/
 
-.bg-dark{
+.bg-dark footer{
 	background:#333;
 	color: #808080;
 	min-height:30px;
