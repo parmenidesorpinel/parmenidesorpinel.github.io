@@ -161,7 +161,7 @@ body{
 #boxes .box{
 	padding: 15px;
 	margin-top: 21px;
-	margin-bottom: 21px;
+	margin-bottom: 3px;
 	margin-left: 10px;
 	border:1px #f4f4f4 solid;
 	border-radius: 9px;
@@ -191,16 +191,21 @@ body{
 	padding:10px;
 }
 
-.patrocinador{
-	margin-top: 5px;
+.patrocinadores .anuncio{
+	align-content: center center;
+}
+
+.patrocinador-1{
+	margin-top: 45px;
 	margin-bottom: 5px;
 	border:none;
 }	
-.patrocinador_2{
-	margin-top: 5px;
+.patrocinador-2{
+	margin-top: 36px;
 	margin-bottom: 15px;
 	border:none;
 	text-align:center;
+	align-items: center center;
 }	
 
 /*.center{
