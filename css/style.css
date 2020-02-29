@@ -7,8 +7,9 @@ body{
 }
 
 .navbar{
-	max-width: 1100px;
+	max-width: 1160px;
 	min-width: 450px;
+	margin:auto;
 }
 
 .navbar-brand .logo{
@@ -32,10 +33,11 @@ body{
 /*global*/
 
 #container{
-	max-width: 1100px;
+	max-width: 1160px;
 	padding-bottom:10px;
 	align-items: center;
 	text-align:center;
+	margin:auto;
 	/*min-height: auto;
 	color:#f4f4f4;
 	width:auto;
@@ -60,18 +62,7 @@ body{
 
 .showcase{
 	color:#f4f4f4;
-	min-width: 450px;
-	/*background:url('../images/Pro podium watermark.jpg') no-repeat 0px 0px;
-	background-size: cover;
-	min-height: 620px;*/
-	/*margin:auto;
-	max-width: auto;
-	padding-bottom:10px;
-	min-height:40px;
-	background:url('../images/Pro podium watermark.jpg') no-repeat 0px 0px;
-	background-size: cover;
-	background-color: #FFFFFF;
-	text-align:center; */
+	/*min-width: 450px;*/
 	
 }
 
@@ -81,7 +72,7 @@ body{
 }
 
 #showcase1{
-	max-width: 1200;
+	max-width: 1160;
 	padding-bottom:10px;
 	/*min-height:600px;*/
 	background:url('../voluntiers/feed all.jpg') no-repeat -840px -1152px;
@@ -104,11 +95,8 @@ body{
 .intro{
 	text-shadow: 2px 2px 9px black;
 	padding: 6px;
-	/*min-width: 360px;
-	max-width: 600px;
-	margin-top: 333px;
-	margin-bottom: 45px;*/
 }
+
 .intro h4{
 	text-align:center;
 	font-size: 21px;
@@ -165,19 +153,19 @@ body{
 	display: flex;
 	align-items: center;
 	text-align:center;
-	width:96%;
+	width:100%;
 	color: #C0C0C0;
+	max-width: 1160px;
 }
 
 #boxes .box{
-	/*width: 27%;*/
-	min-width: 450px;
 	padding: 15px;
 	margin-top: 21px;
 	margin-bottom: 21px;
 	margin-left: 10px;
 	border:1px #f4f4f4 solid;
 	border-radius: 9px;
+	max-width: 1160px;
 }
 
 .cartel{
@@ -190,7 +178,7 @@ body{
 
 
 #sponsors{
-	max-width: 1100px;
+	max-width: 1160px;
 	margin: auto;
 	background:#FFFFFF;
 	color: #C0C0C0;
@@ -234,10 +222,10 @@ body{
 		margin:auto;
 	}
 	
-	#boxes .box{
+	/*#boxes .box{
 	width: 96%;
 	margin: 3px 3px;
-	/*padding: 15px;
+	padding: 15px;
 	margin-top: 21px;
 	margin-bottom: 21px;
 	margin-left: 10px;
@@ -251,7 +239,7 @@ body{
 	padding: none;
 	margin-top: 63px;
 	margin-bottom: 45px;
-}
+	}
 	.intro h4{
 	text-align:center;
 	font-size: 24px;
