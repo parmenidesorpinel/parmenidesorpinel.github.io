@@ -206,13 +206,13 @@ body{
 /*.center{
 	text-align:center;
 	margin:auto;
-}*/
+}
 
 .bg-dark footer{
 	background:#333;
 	color: #808080;
 	min-height:30px;
-}
+}*/
 
 @media screen and (max-width: 450px){
 		#About h3{
