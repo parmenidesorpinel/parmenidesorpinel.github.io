@@ -48,6 +48,39 @@ body{
 	 
 }
 
+/*   titulos para cada una de las paginas */
+
+#titulo{	
+	text-shadow: 2px 2px 9px black;
+	padding: 12px;
+	margin:45px 0px;
+}
+
+#titulo h1{
+	text-align:center;
+	font-size: 36px;
+}
+
+/*   logos de patrocinadores para todas las paguinas */
+
+.patrocinadores .anuncio{
+	align-content: center center;
+	margin: 15px;
+}
+
+.patrocinador-1{
+	margin-top: 45px;
+	margin-bottom: 5px;
+	border:none;
+}	
+.patrocinador-2{
+	margin-top: 36px;
+	margin-bottom: 15px;
+	border:none;
+	text-align:center;
+	align-items: center center;
+}
+
 
 .boton{
 	height:18px
@@ -56,7 +89,7 @@ body{
 	padding-left:20px;
 	padding-right:20px;
 	color:#ffffff;
-}
+	}
 
 /* showcase */ 
 
@@ -80,9 +113,16 @@ body{
 	text-align:center;
 }
 
+.p-close{
+	margin-bottom: 21px;
+}
 
+.p-close h4{
+	margin-top: 21px;
+	text-align: center;
+}
 
-.p-close p {
+.p-close p{
 	margin-bottom: -5px;
 }
 
@@ -92,11 +132,13 @@ body{
 	background-color: #FFFFFF;
 }
 
+/* pagina principal 1*/
+
 .intro{
 	text-shadow: 2px 2px 19px black;
 	padding: 26px;
 	text-align: center;
-	color:#686868;
+	color:red;
 }
 
 .intro h4{
@@ -105,18 +147,26 @@ body{
 	margin-top:auto;
 }
 
-#titulo{	
-	text-shadow: 2px 2px 9px black;
-	padding: 1px;
-	margin-top: 33px;
-	margin-bottom: 45px;
+#boxes {
+	display: flex;
+	align-items: center;
+	text-align:center;
+	width:100%;
+	color: #C0C0C0;
+	max-width: 1160px;
 }
 
-#titulo h4{
-	text-align:center;
-	font-size: 36px;
-	margin:120px 105px 20px 105px;
+#boxes .box{
+	padding: 15px;
+	margin-top: 21px;
+	margin-bottom: 23px;
+	margin-left: 10px;
+	border:1px #f4f4f4 solid;
+	border-radius: 9px;
+	max-width: 1160px;
 }
+
+/* pagina About 2*/
 
 .about-us{
 	min-width: 450px;
@@ -156,24 +206,7 @@ body{
 }
 
 
-#boxes {
-	display: flex;
-	align-items: center;
-	text-align:center;
-	width:100%;
-	color: #C0C0C0;
-	max-width: 1160px;
-}
 
-#boxes .box{
-	padding: 15px;
-	margin-top: 21px;
-	margin-bottom: 23px;
-	margin-left: 10px;
-	border:1px #f4f4f4 solid;
-	border-radius: 9px;
-	max-width: 1160px;
-}
 
 .cartel{
 	width: 600px;
@@ -183,38 +216,7 @@ body{
 	border-radius: 9px;
 }
 
-
-#sponsors{
-	max-width: 1160px;
-	margin: auto;
-	background:#FFFFFF;
-	color: #C0C0C0;
-	padding-top: 20px;
-}
-
-#sponsors .patrocinador{
-	text-align:center;
-	width:20%;
-	padding:10px;
-}
-
-.patrocinadores .anuncio{
-	align-content: center center;
-	margin: 15px;
-}
-
-.patrocinador-1{
-	margin-top: 45px;
-	margin-bottom: 5px;
-	border:none;
-}	
-.patrocinador-2{
-	margin-top: 36px;
-	margin-bottom: 15px;
-	border:none;
-	text-align:center;
-	align-items: center center;
-}	
+/* footer */	
 
 .center{
 	text-align:center;
