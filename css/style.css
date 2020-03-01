@@ -216,16 +216,16 @@ body{
 	align-items: center center;
 }	
 
-/*.center{
+.center{
 	text-align:center;
 	margin:auto;
 }
 
-.bg-dark footer{
+.center p{
 	background:#333;
-	color: #808080;
-	min-height:30px;
-}*/
+	color: #009BFF;
+	min-height:40px;
+}
 
 @media screen and (max-width: 450px){
 		#About h3{
