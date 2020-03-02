@@ -63,17 +63,24 @@ body{
 
 /*   logos de patrocinadores para todas las paguinas */
 
+.patrocinadores {
+	text-align: center;
+}
+
 .patrocinadores .anuncio{
 	align-content: center center;
-	margin: 15px;
+	margin: 0px;
 }
 
 .patrocinador-1{
+	max-width: 1160px;
 	margin-top: 45px;
 	margin-bottom: 5px;
 	border:none;
 }	
+
 .patrocinador-2{
+	max-width: 1160px;
 	margin-top: 36px;
 	margin-bottom: 15px;
 	border:none;
