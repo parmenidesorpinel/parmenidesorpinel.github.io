@@ -38,13 +38,6 @@ body{
 	align-items: center;
 	text-align:center;
 	margin:auto;
-	/*min-height: auto;
-	color:#f4f4f4;
-	width:auto;
-	margin:auto;
-	overflow:hidden;*/
-	
-	/*background:url('../images/Pro podium watermark.jpg') no-repeat 0px 0px;*/
 	 
 }
 
@@ -179,7 +172,41 @@ body{
 	padding: 40px 30px; 
 }
 
+/* pagina categories 3*/
 
+
+
+/* pagina maps 4*/
+
+.stravaweather{
+	margin-bottom: 21px;
+	align-items:center;
+}
+
+.strava-weather{
+	width:650px;
+	
+}
+
+.stravaweather strava{
+	text-align: center;
+}
+
+.stravaweather wu{
+	text-align: center;
+}
+
+/* pagina register now 5*/
+
+/* pagina results 6*/
+
+/* pagina sponsors 7*/
+
+/* pagina volunteers 8*/
+
+/* pagina contact 9*/
+
+/* pagina links 10*/
 
 /* boxex */
 
@@ -243,23 +270,23 @@ body{
 		margin:auto;
 	}
 	
-	/*#boxes .box{
-	width: 96%;
-	margin: 3px 3px;
-	padding: 15px;
-	margin-top: 21px;
-	margin-bottom: 21px;
-	margin-left: 10px;
-	border:1px #f4f4f4 solid;
-	border-radius: 9px;*/
+	#container{
+	max-width: auto;
+	padding-bottom:10px;
+	align-items: center;
+	text-align:center;
+	margin:none;
+	padding-right: none;
+	 
+}
 	
 
-	
 	.intro{
 	padding: none;
 	margin-top: 63px;
 	margin-bottom: 45px;
 	}
+	
 	.intro h4{
 	text-align:center;
 	font-size: 24px;
@@ -287,10 +314,12 @@ body{
 		background:url('../voluntiers/feed all.jpg') no-repeat -960px -1152px;
 	}
 
-	#stravaweather{
+	.stravaweather{
 		text-align:center;
 		max-width: auto;
+		margin-bottom: 21px;
 	}
+	
 
 	#containerclick .btn-link{
 		text-align:center;
