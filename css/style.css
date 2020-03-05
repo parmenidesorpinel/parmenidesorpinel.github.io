@@ -275,6 +275,8 @@ body{
 	#container{
 	max-width: auto;
 	padding-bottom:10px;
+	margin-left: none;
+	margin-right: none;
 	align-items: center;
 	text-align:center;
 	margin:none;
