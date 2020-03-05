@@ -44,7 +44,7 @@ body{
 /*   titulos para cada una de las paginas */
 
 #titulo{	
-	text-shadow: 2px 2px 9px black;
+	text-shadow: 2px 2px 6px black;
 	padding: 12px;
 	margin:45px 0px;
 }
@@ -121,6 +121,7 @@ body{
 .p-close h4{
 	margin-top: 21px;
 	text-align: center;
+	text-shadow: 2px 2px 3px black;
 }
 
 .p-close p{
