@@ -7,7 +7,7 @@ body{
 }
 
 .navbar{
-	max-width: 1160px;
+	max-width: 100%;
 	min-width: 450px;
 	margin:auto;
 }
@@ -43,7 +43,7 @@ body{
 
 /*   titulos para cada una de las paginas */
 
-#titulo{	
+/*#titulo{	
 	text-shadow: 2px 2px 6px black;
 	padding: 12px;
 	margin:45px 0px;
@@ -84,7 +84,7 @@ body{
 
 
 .boton{
-	height:18px
+	height:18px;
 	background: #e8491d;
 	border-bottom:0;
 	padding-left:20px;
@@ -173,7 +173,7 @@ body{
 	min-width: 450px;
 	padding: 40px 30px; 
 }
-
+/**/
 /* pagina categories 3*/
 
 
@@ -262,6 +262,55 @@ body{
 	background:#333;
 	color: #009BFF;
 	min-height:40px;
+}
+
+.container{
+    padding-top: 50px;
+	padding-bottom:50px ;
+}
+h2{
+    text-align: center;
+    padding: 80px;
+}
+
+.slick-slide{
+    margin: 0 20px;
+}
+.slick-slide img{
+    width: 100%;
+}
+.slick-slider{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+}
+.slick-list{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block
+}
+.slick-slide{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+.slick-slide img{
+    display: block;
+}
+.slick-initialized .slick-slide{
+    display: block;
+}
+.copy{
+    padding-top: 250px;
 }
 
 @media screen and (max-width: 450px){
