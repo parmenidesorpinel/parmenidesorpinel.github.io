@@ -182,21 +182,9 @@ body{
 /* pagina maps 4*/
 
 .stravaweather{
-	margin-bottom: 21px;
-	align-items:center;
-}
+	margin-top: 200px;;
 
-.strava-weather{
-	width:650px;
 	
-}
-
-.stravaweather strava{
-	text-align: center;
-}
-
-.stravaweather wu{
-	text-align: center;
 }
 
 /* pagina register now 5*/
