@@ -367,15 +367,20 @@ h2{
 		text-align:center;
 		max-width: auto;
 	}
-
-	#btn-link{
-		
-	}
-
-
-	
 }
 
+#countdown {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 100px;
+}
+
+.simply-section {
+	background: #ffffff;
+	width: 180px;
+	height: 180px;
+	margin: 0 20px;
+}
 
 
 
