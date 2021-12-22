@@ -12,7 +12,7 @@ simplyCountdown('#countdown', {
         seconds: { singular: ' second', plural: ' seconds' }
     },
     plural: true, //use plurals
-    inline: true, //set to true to get an inline basic countdown like : 24 days, 4 hours, 2 minutes, 5 seconds
+    inline: false, //set to true to get an inline basic countdown like : 24 days, 4 hours, 2 minutes, 5 seconds
     inlineClass: 'simply-countdown-inline', //inline css span class in case of inline = true
     // in case of inline set to false
     enableUtc: true, //Use UTC or not - default : false

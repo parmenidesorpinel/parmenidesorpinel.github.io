@@ -1,3 +1,27 @@
+#countdown {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 100px;
+}
+
+.simply-section {
+	background: white;
+	width: 180px;
+	height: 180px;
+	margin: 20px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.simply-amount {
+	display: block;
+	font-size: 24pt;
+	font-weight: bold;
+} 
+
+
+
 body{
 	font-family: 'arial', helvetica, impact;
 	font-size: 15px;
@@ -38,7 +62,6 @@ body{
 	align-items: center;
 	text-align:center;
 	margin:auto;
-	 
 }
 
 /*   titulos para cada una de las paginas */
@@ -368,22 +391,6 @@ h2{
 		max-width: auto;
 	}
 }
-
-#countdown {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 100px;
-}
-
-.simply-section {
-	background: #ffffff;
-	width: 180px;
-	height: 180px;
-	margin: 0 20px;
-}
-
-
-
 
 /* media queries */
 /* #f4f4f4 dark grey White	#FFFFFF*/
