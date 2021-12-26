@@ -4,6 +4,18 @@
 	margin-bottom: 100px;
 }
 
+#countdown2 {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 100px;
+}
+
+#countdown3 {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 100px;
+}
+
 .simply-section {
 	background: white;
 	width: 180px;
@@ -19,8 +31,6 @@
 	font-size: 24pt;
 	font-weight: bold;
 } 
-
-
 
 body{
 	font-family: 'arial', helvetica, impact;
