@@ -1,14 +1,3 @@
-let pantallas=["menu", "add", "lista"];
-let mostrar = function(id){
-    let aMostrar = document.querySelector("#"+id);
-    aMostrar.style.display="block";
-    for(pantalla of pantallas){
-        if(pantalla !== id)
-            document.querySelector("#"+pantalla).style.display="none";
-    }
-};
-mostrar("lista");
-
 let resultados=[
     {
         Place:"1",
@@ -49,7 +38,7 @@ let resultados=[
 ];
 
 let crearTabla=function(lista){
-    let stringTabla="<tr><th>Place</th><th>Time</th><th>Bib</th><th>Name</th><th>Age</th><th>City</th><th>Team</th>";
+    let stringTabla="<tr><th>Place</th><th>Time</th><th>Bib</th><th>Name</th><th>Age</th><th>City</th><th>Team</th></tr>";
     for(let tarea of lista){
         let fila = "<tr> <td>"
         fila += tarea.Place;
@@ -79,11 +68,11 @@ let crearTabla=function(lista){
         fila += tarea.Team;
         fila += "</td>"
 
-        file += "</tr>";
+        fila += "</tr>";
         stringTabla += fila;
         console.log(stringTabla);
     }
     return stringTabla;
 };
 
-document.getElementById("tablaResultados").innerHTML=crearTabla(Tareas);
+document.getElementById("tablaResultados").innerHTML=crearTabla(resultados);
