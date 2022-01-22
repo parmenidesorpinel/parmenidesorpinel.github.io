@@ -100,6 +100,7 @@ Important! Do not edit this plugin if you're not sure you're doing it right. The
             cells,
             clen;
 
+            
         /**
         Options default values
         **/

@@ -9,11 +9,11 @@
 	<meta name="author" content="Parmenides Orpinel">
 	<title>OakFlats MTB</title>
 	<link rel="stylesheet" href="./css/style.css">
-
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="./js/tableManager.js"></script>
+	<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+	<!--<script src="./js/tableManager.js"></script>-->
 	
 </head>
 
@@ -90,9 +90,44 @@
 		  </div>
 		</div>	
 	</div>
-	<div id="lista" class="container">
-		<table class="table" id="tablaResultados"></table>
-		<script>
+	<div class="container">
+		<table class="table">
+			<thead id="table-head"></thead>
+			<tbody id="table-body"></tbody>
+		</table>
+	</div>
+	<!--<div id="lista" class="container">
+		<table class="table" id="tablaResultados">
+			<thead>
+				<tr>
+				  <th scope="col">#</th>
+				  <th scope="col">First</th>
+				  <th scope="col">Last</th>
+				  <th scope="col">Handle</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <th scope="row">1</th>
+				  <td>Mark</td>
+				  <td>Otto</td>
+				  <td>@mdo</td>
+				</tr>
+				<tr>
+				  <th scope="row">2</th>
+				  <td>Jacob</td>
+				  <td>Thornton</td>
+				  <td>@fat</td>
+				</tr>
+				<tr>
+				  <th scope="row">3</th>
+				  <td>Larry</td>
+				  <td>the Bird</td>
+				  <td>@twitter</td>
+				</tr>
+			  </tbody>
+		</table>-->
+		<!--<script>
 			$(".tablemanager").tablemanager({
 				firstSort:
 				[
@@ -105,8 +140,12 @@
 				pagination:true
 			});
 		</script>
-	</div>
-
+	</div>-->
+	<!--<script>
+		$(document).ready(function(){
+			$("#tablaResultados").dataTable();
+		});
+	</script>-->
 	<div>
 		<h2 class="text-center font-weight-bold">LONG TRACK 2021</h2>
 
@@ -209,8 +248,55 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="index.js"></script>
-	<script src="./js/resultsScript.js"></script>
 	</body>
+
+	<script src="./js/resultsScript.js"></script>
+	<script type="text/javascript" src="./js/mdb.min.js"></script>
+	<script src="https://apis.google.com/js/api.js"></script>
+	<script type="text/javascript" src="./js/easyData-google-sheets.js"></script>
+	<!--creating the table-->
+	<script>
+		{
+			{
+				const API_KEY = "AIzaSyAdMjl-0ADeQOcMOtw28MAqqsK6eMfZcZk";
+
+				function displayResult2(response){
+					let tableHead = "";
+					let tableBody = "";
+
+					response.result.values.forEach((row, index) => {
+						if(index ===0){
+							tableHead += "<tr>";
+								row.forEach((val) => (tableHead += "<th>" + val + "</th>"));
+								tableHead += "</tr>";
+						}
+						else{
+							tableBody += "<tr>";
+							row.forEach((val) => (tableBody += "<td>" + val + "</td>"));
+							tableBody += "</tr>";
+						}
+					});
+
+					document.getElementById("table-head").innerHTML = tableHead;
+					document.getElementById("table-body").innerHTML = tableBody;
+				}
+
+				function loadData(){
+					const spreadsheetId = "13FvUoWdDIS1XT2XxjfaE6g05W8OUeTfqDSjra_RZMIs";
+					const range = "A:Z";
+					getPublicValues({ spreadsheetId, range }, displayResult2);
+				}
+				window.addEventListener("load", (e) => {
+					initOAuthClient({ apiKey: API_KEY });
+				});
+
+				document.addEventListener("gapi-loaded", (e) => {
+					loadData();
+				});
+			}
+		}
+	</script>
+
 </html>
 
 <!-- /* #f4f4f4 dark grey White	#FFFFFF*/

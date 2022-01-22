@@ -1,4 +1,4 @@
-let resultados=[
+/*let resultados=[
     {
         Place:"1",
         Time:"-",
@@ -75,4 +75,4 @@ let crearTabla=function(lista){
     return stringTabla;
 };
 
-document.getElementById("tablaResultados").innerHTML=crearTabla(resultados);
+document.getElementById("tablaResultados").innerHTML=crearTabla(resultados);*/
