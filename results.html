@@ -12,9 +12,14 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
-	<!--<script src="./js/tableManager.js"></script>-->
 	
+	<!--<script src="./js/tableManager.js"></script>-->
+	<script type="text/javascript" src="./js/mdb.min.js"></script>
+	<script src="https://apis.google.com/js/api.js"></script>
+	<script type="text/javascript" src="./js/easyData-google-sheets.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css">
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js"></script>
+	<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
 </head>
 
 <body>
@@ -71,7 +76,7 @@
  <!-- Sponsors -->
 
  <!--SHORT TRACK TABLE-->
-	<div class="container">
+	<!--<div class="container">
         <h2 class="text-center font-weight-bold">SHORT TRACK 2021</h2>
 
         <div class="container" style="border-radius: 3px red solid;">
@@ -89,9 +94,10 @@
 		    </div>
 		  </div>
 		</div>	
-	</div>
+	</div>-->
+
 	<div class="container">
-		<table class="table">
+		<table id="example" class="table table-striped table-bordered">
 			<thead id="table-head"></thead>
 			<tbody id="table-body"></tbody>
 		</table>
@@ -146,7 +152,7 @@
 			$("#tablaResultados").dataTable();
 		});
 	</script>-->
-	<div>
+	<!--<div>
 		<h2 class="text-center font-weight-bold">LONG TRACK 2021</h2>
 
 		<div class="container" style="border-radius: 1px;">
@@ -212,7 +218,7 @@
 		    </div>
 		  </div>
 		</div>
-	</div>
+	</div>-->
 
 	
         <!--
@@ -250,10 +256,12 @@
     <script src="index.js"></script>
 	</body>
 
-	<script src="./js/resultsScript.js"></script>
-	<script type="text/javascript" src="./js/mdb.min.js"></script>
-	<script src="https://apis.google.com/js/api.js"></script>
-	<script type="text/javascript" src="./js/easyData-google-sheets.js"></script>
+	<!--datatables-->
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.18/datatables.min.css" />
+	<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.18/datatables.min.js"></script>
+	<script type="text/javascript" src="./js/datatable.js"></script>
+	<!--datatables-->
+	
 	<!--creating the table-->
 	<script>
 		{
@@ -279,6 +287,7 @@
 
 					document.getElementById("table-head").innerHTML = tableHead;
 					document.getElementById("table-body").innerHTML = tableBody;
+					document.getElementById('example').DataTable();
 				}
 
 				function loadData(){
@@ -296,6 +305,13 @@
 			}
 		}
 	</script>
+	
+	<!--paginacion-->
+	<!--<script>
+		$(window).on( "load", function() {
+    $('#example').DataTable();
+} );
+	</script>-->
 
 </html>
 
