@@ -11,19 +11,10 @@
 	<link rel="stylesheet" href="./css/style.css">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	
-	<!--<script src="./js/tableManager.js"></script>-->
-	<script type="text/javascript" src="./js/mdb.min.js"></script>
-	<script src="https://apis.google.com/js/api.js"></script>
-	<script type="text/javascript" src="./js/easyData-google-sheets.js"></script>
-	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css">
-	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js"></script>
-	<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
 </head>
 
 <body>
-	    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 		<a class="navbar-brand" href="#"><img src="images/OF mtb.png" class="logo"/></a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -97,7 +88,7 @@
 	</div>-->
 
 	<div class="container">
-		<table id="example" class="table table-striped table-bordered">
+		<table id="datatable" class="table table-striped table-bordered">
 			<thead id="table-head"></thead>
 			<tbody id="table-body"></tbody>
 		</table>
@@ -235,34 +226,33 @@
             <div class="slide"><img src="sponsors/Chucks.png" alt="logo" ></div>
 	    	<div class="slide"><img src="sponsors/oky.png" alt="logo"></div>
         </section> -->
-    </div>
 
 
-<footer class="center bg-dark rounded" 
-		style="margin-top: 30px; text-align: center;">
-		<a href="https://www.facebook.com/Oakflats-MTB-738873469643155/"  target="_blank" role="button">
-  			<button type="button" class="btn btn-link">Facebook</button>
-  		</a>
-		<a href="https://www.instagram.com/oakflatsmtb/" target="_blank" role="button">
-			<button type="button" class="btn btn-link">Instagram</button>
-		</a>
-		<p>Designed by: Parmenides Orpinel, OakFlats MTB Race Director, Copyright &copy; 2020</p> 
-</footer>
-	
+	<footer class="center bg-dark rounded" 
+			style="margin-top: 30px; text-align: center;">
+			<a href="https://www.facebook.com/Oakflats-MTB-738873469643155/"  target="_blank" role="button">
+				<button type="button" class="btn btn-link">Facebook</button>
+			</a>
+			<a href="https://www.instagram.com/oakflatsmtb/" target="_blank" role="button">
+				<button type="button" class="btn btn-link">Instagram</button>
+			</a>
+			<p>Designed by: Parmenides Orpinel, OakFlats MTB Race Director, Copyright &copy; 2020</p> 
+	</footer>
+</body>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css">
+
+	<script type="text/javascript" src="./js/mdb.min.js"></script>
+	<script src="https://apis.google.com/js/api.js"></script>
+	<script type="text/javascript" src="./js/easyData-google-sheets.js"></script>
+
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="index.js"></script>
-	</body>
 
-	<!--datatables-->
-	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.18/datatables.min.css" />
-	<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.18/datatables.min.js"></script>
-	<script type="text/javascript" src="./js/datatable.js"></script>
-	<!--datatables-->
-	
-	<!--creating the table-->
 	<script>
 		{
 			{
@@ -287,7 +277,6 @@
 
 					document.getElementById("table-head").innerHTML = tableHead;
 					document.getElementById("table-body").innerHTML = tableBody;
-					document.getElementById('example').DataTable();
 				}
 
 				function loadData(){
@@ -302,16 +291,14 @@
 				document.addEventListener("gapi-loaded", (e) => {
 					loadData();
 				});
+				
 			}
+			
 		}
+		$(document).ready( function () {
+				$('datatable').DataTable();
+			} );
 	</script>
-	
-	<!--paginacion-->
-	<!--<script>
-		$(window).on( "load", function() {
-    $('#example').DataTable();
-} );
-	</script>-->
 
 </html>
 

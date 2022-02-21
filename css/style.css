@@ -183,12 +183,11 @@ body{
 }
 
 #boxes {
-	display: flex;
+	display: fluid;
 	align-items: center;
 	text-align:center;
 	width:100%;
 	color: #C0C0C0;
-	max-width: 1160px;
 }
 
 #boxes .box{
