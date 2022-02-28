@@ -2,6 +2,7 @@
 	display: flex;
 	justify-content: center;
 	margin-bottom: 100px;
+	font-style: black;
 }
 
 #countdown2 {
@@ -17,7 +18,7 @@
 }
 
 .simply-section {
-	background: white;
+	background: crimson;
 	width: 180px;
 	height: 180px;
 	margin: 20px;
@@ -155,7 +156,7 @@ body{
 .p-close h4{
 	margin-top: 21px;
 	text-align: center;
-	text-shadow: 2px 2px 3px black;
+	
 }
 
 .p-close p{

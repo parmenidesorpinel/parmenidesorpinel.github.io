@@ -13,22 +13,24 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+	
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+	<link href="./css/font-awesome/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet"> <!--load all styles -->
  
 </head>
 
 <body>
 
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-		<a class="navbar-brand" href="#"><img src="images/OF mtb.png" class="logo"/></a>
+		<a class="navbar-brand" href="index.html"><img src="images/OF mtb.png" class="logo"/></a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mx-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="index.html">OakFlats MTB<span class="sr-only">(current)</span></a>
-				</li>
+				
 				<!--<li class="nav-item active">
 					<a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
 				</li>-->
@@ -68,33 +70,31 @@
 		</div>
 	</nav>
 
-<section class="container">	
+<div class="container">	
 	<div id="titulo">
-		<div class="col text-center">
-			<h1>MAPS</h1>
+		<div class="text-center">
+			<h1>Overview of the tracks</h1>
 		</div>		
 	</div>
-	
-			<div class="stravaweather">		
-			
-				<div class="row justify-content-center margin">
-					<a href="https://www.strava.com/activities/5533917826/embed/f4dfac18018013d72410b9d2cc8c822e09a1b342" target="_blank" role="botton">
-						<img src="MAPS/strava.png" width="180px">
-						</a>
-				</div>
-				<div class="row justify-content-center margin">
-					<a href="" target="_blank" role="botton">
-						<img src="MAPS/strava.png" width="180px">
-						</a>
-				</div>
-				
-				
-				<div class="row justify-content-center" style="margin-top: 50px;">
-					<a href="https://www.wunderground.com/dashboard/pws/KNMTIJER24" target="_blank" role="botton"><img src="MAPS/weather underground.jpeg" width="240px">
-					</a> 
-				</div>
 
-			</div>	
+	<div class="container">
+	<div class="row justify-content-center align-items-center">
+		<div class="col-md-6 col-sm-12 justify-content-center">		
+			<a href="https://www.strava.com/activities/5533917826/embed/f4dfac18018013d72410b9d2cc8c822e09a1b342" target="_blank" >
+				<img style="width: 50%;" class="img-fluid" src="MAPS/strava.png">
+			</a>
+		</div>
+		<div class="col-md-6 col-sm-12 justify-content-center">
+			<a href="https://www.wunderground.com/dashboard/pws/KNMTIJER24" target="_blank" role="botton">
+				<img style="height: 50%;" class="img-fluid" src="./MAPS/weather underground.jpeg">
+			</a> 
+		</div>
+	</div>
+</div>
+</div>
+			
+	
+			
 	
 			
 <div class="container" style="border-radius: 3px red solid;">
@@ -156,16 +156,19 @@
         </section>
 	</div>
 
-<footer class="center bg-dark rounded" 
-		style="margin-top: 30px; text-align: center;">
-		<a href="https://www.facebook.com/Oakflats-MTB-738873469643155/"  target="_blank" role="button">
-  			<button type="button" class="btn btn-link">Facebook</button>
-  		</a>
-		<a href="https://www.instagram.com/oakflatsmtb/" target="_blank" role="button">
-			<button type="button" class="btn btn-link">Instagram</button>
-		</a>
-		<p>Designed by: Parmenides Orpinel, OakFlats MTB Race Director, Copyright &copy; 2020</p> 
-</footer>
+	<footer class="bg-dark text-light text-center text-lg-start container-fluid">
+		<div class="text-center p-3">
+			<a class="text-danger p-3" href="https://www.facebook.com/Oakflats-MTB-738873469643155/" >
+				<i class="fab fa-facebook fa-2x"></i>
+			</a>
+			<a class="text-danger p-3" href="https://www.instagram.com/oakflatsmtb/" >
+				<i class="fab fa-instagram fa-2x"></i>
+			</a>
+			<p class="mt-3">Designed by: Parmenides Orpinel, OakFlats MTB Race Director,</p>
+			<p> Copyright &copy; 2021</p>
+		</div> 
+	</footer>
+
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
