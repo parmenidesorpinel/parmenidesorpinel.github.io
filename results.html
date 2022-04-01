@@ -93,10 +93,10 @@
 		</div>	
 	</div>-->
 
-<div class="container">
+<div class="container table-responsive">
 	<h2>Let's take a look at the <strong>Winners</strong>!</h2>
-	<table id="results" class="table">
-		<thead>
+	<table id="results" class="table table-hover">
+		<thead class="thead-light">
 			<th scope="col">Place</th>
 			<th scope="col">Time</th>
 			<th scope="col">Bib#</th>
@@ -1137,7 +1137,12 @@
 
 <script>
 	$(document).ready( function () {
-		$('#results').DataTable();
+		$('#results').DataTable(
+		{ language: {
+			searchPlaceholder: "Look for your results here",
+			search: "",
+			}
+		})
 	} );
 </script>
 

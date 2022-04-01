@@ -1,3 +1,7 @@
+.dataTables_wrapper .dataTables_filter input  {
+	width: 500px;
+}
+
 #countdown {
 	display: flex;
 	justify-content: center;
