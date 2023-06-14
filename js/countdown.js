@@ -1,7 +1,7 @@
 simplyCountdown('#countdown', {
-    year: 2022, // required
+    year: 2023, // required
     month: 8, // required
-    day: 13, // required
+    day: 04, // required
     hours: 15, // Default is 0 [0-23] integer
     minutes: 0, // Default is 0 [0-59] integer
     seconds: 0, // Default is 0 [0-59] integer
@@ -26,9 +26,9 @@ simplyCountdown('#countdown', {
 });
 
 simplyCountdown('#countdown2', {
-    year: 2022, // required
+    year: 2023, // required
     month: 8, // required
-    day: 14, // required
+    day: 05, // required
     hours: 15, // Default is 0 [0-23] integer
     minutes: 0, // Default is 0 [0-59] integer
     seconds: 0, // Default is 0 [0-59] integer
@@ -53,9 +53,9 @@ simplyCountdown('#countdown2', {
 });
 
 simplyCountdown('#countdown3', {
-    year: 2022, // required
+    year: 2023, // required
     month: 8, // required
-    day: 15, // required
+    day: 06, // required
     hours: 15, // Default is 0 [0-23] integer
     minutes: 0, // Default is 0 [0-59] integer
     seconds: 0, // Default is 0 [0-59] integer
