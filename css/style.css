@@ -35,20 +35,20 @@
 	display: block;
 	font-size: 24pt;
 	font-weight: bold;
-} 
+}
 
-body{
-	
+body {
 	font-size: 15px;
 	line-height: 1.5;
 	padding: 0;
-	background-color:#f4f4f4;
+	/*background-image: radial-gradient(#990202, #313133);*/
 }
 
 .navbar{
 	max-width: 100%;
 	min-width: 250px;
-	margin:auto;
+	margin: auto;
+	position:relative;
 }
 
 .navbar-brand .logo{
@@ -56,6 +56,12 @@ body{
 	width: 60px;
 }
 
+.navbar-overlay{
+	position:absolute;
+	top: 3px;
+	left: 3px;
+	vertical-align: middle;
+}
 .navbar a{
 	background-color:none;
 	color: #000;
@@ -72,14 +78,18 @@ body{
 
 /*global*/
 
-#container{
+#container {
 	max-width: 1160px;
-	padding-bottom:10px;
+	padding-bottom: 10px;
 	align-items: center;
-	text-align:center;
-	margin:auto;
+	text-align: center;
+	margin: auto;
+	background-color: #313133
 }
 
+.card-color {
+	background-color: #313133
+}
 /*   titulos para cada una de las paginas */
 
 /*#titulo{	
@@ -215,7 +225,13 @@ body{
 }
 /**/
 /* pagina categories 3*/
-
+.container-cat {
+	color: white;
+	background-color: #313133;
+	border-radius: 10px;
+	padding: 20px;
+	margin-top: 10px;
+}
 
 
 /* pagina maps 4*/
@@ -225,16 +241,15 @@ body{
 	position: relative;
 	font-family: Arial, sans-serif;
 	font-size: 14px;
-	color: white;
-	background-color: #dc3545; /* Red color */
+	color: black;
+	background-color: #dc3545;
 	padding: 8px 16px;
 	border: none;
 	border-radius: 4px;
-	appearance: none;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	cursor: pointer;
-	margin-bottom: 10px; /* Add desired padding below the dropdown */
+	margin-bottom: 10px;
 }
 
 .custom-select::after {
@@ -246,6 +261,9 @@ body{
 	font-size: 12px;
 }
 
+.custom-select:default{
+	color:black;
+}
 
 .stravaweather {
 	margin-top: 200px;

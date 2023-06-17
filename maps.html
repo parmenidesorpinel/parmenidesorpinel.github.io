@@ -90,14 +90,13 @@
 					<a class="nav-link" href="Click.html">Links<span class="sr-only">(current)</span></a>
 				</li>
 			</ul>
-			</center>
 
 		</div>
 	</nav>
 
 	<!--Check Weather Button--> 
-	<div class="container">
-		<div id="titulo" style="background-color: #343a40; border-radius: 10px; padding: 20px; ">
+	<div class="container" style="padding-bottom:0;">
+		<div class="card-color" id="titulo" style="border-radius: 10px; padding: 20px;">
 			<div class="text-center">
 				<h1 style="color: white;">Oak Flats Weather</h1>
 			</div>
@@ -114,13 +113,13 @@
 	</div>
 
 	<!-- Map Dropdown-->
-	<div class="container">
-		<div class="card" style="text-align:center;">
-			<div class="card-body" style="maps:flex">
-				<h3 class="card-title">Course Maps & Parking</h3>
+	<div class="container" style="padding-top:10px;">
+		<div class="card-color" style="#343a40; border-radius: 10px; padding: 20px; text-align:center;">
+			<div class="card-body">
+				<h3 class="card-title" style="color: white;">Course Maps & Parking</h3>
 			</div>
-			<div class="card-body" style="margin-top: 15px;">
-				<select id="mapSelect" class="custom-select" onchange="changeMap('mapSelect', 'mapContainer', 'stravaLink', 'gpxLink')">
+			<div class="card-body">
+				<select id="mapSelect" class="custom-select" style="border-radius: 10px; padding: 20px" onchange="changeMap('mapSelect', 'mapContainer', 'stravaLink', 'gpxLink')">
 					<option value="" disabled selected>Select Map</option>
 					<option value="MAPS/Map Pro - Advanced 2022.png" data-strava="https://www.strava.com/activities/7110537882" data-gpx="https://www.strava.com/activities/7110537882/export_gpx">PRO / ADVANCED</option>
 					<option value="MAPS/I-b-juniors2022.png" data-strava="https://www.strava.com/activities/7110622331" data-gpx="https://www.strava.com/activities/7110622331/export_gpx">INTERMEDIATE / BEGINNERS / JUNIORS</option>
@@ -138,7 +137,7 @@
 	</div>
 
 	<!-- Sponsors -->
-	<div class="container">
+	<div class="container" style="padding-top:10px;">
         <h2 class="text-center font-weight-bold">Sponsors</h2>
         <section class="customer-logos slider">
             <div class="slide"><img src="vendors/fat tire logo.jpeg" alt="logo"></div> 	
