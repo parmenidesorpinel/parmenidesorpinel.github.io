@@ -41,7 +41,7 @@ body {
 	font-size: 15px;
 	line-height: 1.5;
 	padding: 0;
-	/*background-image: radial-gradient(#990202, #313133);*/
+	background-image: radial-gradient(#990202, #313133);
 }
 
 .navbar{
@@ -88,7 +88,8 @@ body {
 }
 
 .card-color {
-	background-color: #313133
+	background-color: #313133;
+	color: white;
 }
 /*   titulos para cada una de las paginas */
 
@@ -259,11 +260,12 @@ body {
 	right: 12px;
 	transform: translateY(-50%);
 	font-size: 12px;
-}
-
-.custom-select:default{
 	color:black;
 }
+
+	.custom-select option[disabled]:first-child {
+		color: black;
+	}
 
 .stravaweather {
 	margin-top: 200px;
