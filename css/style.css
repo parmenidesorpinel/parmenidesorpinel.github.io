@@ -272,6 +272,12 @@ body {
 	;
 }
 
+#mapContainer > img[src*="2022-detail-map.png"],
+#mapContainer > img[src*="2022-dont-park.png"] {
+	background-color: white;
+	padding: 10px;
+}
+
 /* pagina register now 5*/
 
 /* pagina results 6*/
