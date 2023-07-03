@@ -35,7 +35,7 @@
 					const option = mapSelect.options[i];
 					if (option.value === categoryParam) {
 						option.selected = true;
-                        changeMap('mapSelect', 'mapContainer', 'stravaLink', 'gpxLink');
+						changeMap('mapSelect', 'mapContainer', 'stravaLink', 'gpxLink');
 						break;
 					}
 				}
@@ -53,8 +53,20 @@
 				mapContainer.innerHTML = "<img src='" + selectedOption.value + "' class='img-fluid' />";
 				stravaLink.style.display = selectedOption.hasAttribute("data-strava") ? "inline-block" : "none";
 				gpxLink.style.display = selectedOption.hasAttribute("data-gpx") ? "inline-block" : "none";
-				stravaLink.href = selectedOption.getAttribute("data-strava");
-				gpxLink.href = selectedOption.getAttribute("data-gpx");
+
+				if (selectedOption.hasAttribute("data-strava")) {
+					stravaLink.href = selectedOption.getAttribute("data-strava");
+				} else {
+					stravaLink.removeAttribute("href");
+				}
+
+				if (selectedOption.hasAttribute("data-gpx")) {
+					gpxLink.href = selectedOption.getAttribute("data-gpx");
+					gpxLink.setAttribute("download", "");
+				} else {
+					gpxLink.removeAttribute("href");
+					gpxLink.removeAttribute("download");
+				}
 			} else {
 				mapContainer.innerHTML = "";
 				stravaLink.style.display = "none";
@@ -129,8 +141,8 @@
 			<div class="card-body" style="margin-top: 15px;">
 				<select id="mapSelect" class="custom-select" onchange="changeMap('mapSelect', 'mapContainer', 'stravaLink', 'gpxLink')">
 					<option value="" disabled selected>Select Map</option>
-					<option value="MAPS/MapPro-Advanced2022.png" data-strava="https://www.strava.com/activities/7110537882" data-gpx="https://www.strava.com/activities/7110537882/export_gpx">PRO / ADVANCED</option>
-					<option value="MAPS/I-b-juniors2022.png" data-strava="https://www.strava.com/activities/7110622331" data-gpx="https://www.strava.com/activities/7110622331/export_gpx">INTERMEDIATE / BEGINNERS / JUNIORS</option>
+					<option value="MAPS/MapPro-Advanced2022.png" data-strava="https://www.strava.com/activities/7110537882" data-gpx="MAPS\2022_OakFlats_MTB_Course_for_PRO_Open_Advanced_Cat_1_.gpx" download="2022_OakFlats_MTB_Course_for_PRO_Open_Advanced_Cat_1_.gpx">PRO / ADVANCED</option>
+					<option value="MAPS/I-b-juniors2022.png" data-strava="https://www.strava.com/activities/7110622331" data-gpx="MAPS\OakFlats_MTB_2022_Beginners_Intermediate_juniors_course_.gpx" download="OakFlats_MTB_2022_Beginners_Intermediate_juniors_course_.gpx">INTERMEDIATE / BEGINNERS / JUNIORS</option>
 					<option value="MAPS/shorttrack 2022.png">SHORT TRACK</option>
 					<option value="MAPS/2022-detail-map.png">START / FINISH</option>
 					<option value="MAPS/2022-dont-park.png">PARKING LOT GENERAL</option>
