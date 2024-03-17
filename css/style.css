@@ -90,6 +90,33 @@ body {
 	background-color: #313133;
 	color: white;
 }
+
+#introVideo {
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index:-100;
+}
+
+.videoOverlay{
+	background-image: radial-gradient(#990202, #313133);
+	z-index:-101;
+}
+
+@media (min-aspect-ratio: 16/9) {
+	video {
+	  width: 100%;
+	  height: auto;
+	}
+  }
+  @media (max-aspect-ratio: 16/9) {
+	video {
+	  width: auto;
+	  height: 100%;
+	}
+  }
 /*   titulos para cada una de las paginas */
 
 /*#titulo{	
