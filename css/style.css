@@ -1,380 +1,263 @@
-.dataTables_wrapper .dataTables_filter input  {
-	width: 500px;
+body {
+     font-family: 'Oswald', sans-serif;
+    font-optical-sizing: auto;
+	font-size: 1.5rem;
+	line-height: 1.5;
+	padding: 0;
+	background-color: #f5f5f7;
 }
 
-#countdown {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 100px;
+.oswald-test {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
-#countdown2 {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 100px;
+.inknut-antiqua-light {
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
-#countdown3 {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 100px;
+.inknut-antiqua-regular {
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.simply-section {
-	background: crimson;
-	width: 180px;
-	height: 180px;
-	margin: 20px;
-	align-items: center;
-	display: flex;
-	justify-content: center;
+.inknut-antiqua-medium {
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
-.simply-amount {
-	display: block;
-	font-size: 24pt;
-	font-weight: bold;
+.inknut-antiqua-semibold {
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.inknut-antiqua-bold {
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.inknut-antiqua-extrabold {
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.inknut-antiqua-black {
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;              /* full height */
+    margin: 0;                 /* remove default margin */
 }
 
 body {
-	font-size: 15px;
-	line-height: 1.5;
-	padding: 0;
-	background-image: radial-gradient(#990202, #313133);
+    font-family: "Inknut Antiqua", serif;
+    display: flex;
+    flex-direction: column;    /* stack vertically */
+    min-height: 100vh;         /* at least viewport height */
 }
 
-.navbar{
-	max-width: 100%;
-	min-width: 250px;
-	margin: auto;
-	position:relative;
+main {
+    flex: 1;                   /* take up remaining space */
 }
 
-.navbar-brand .logo{
-	height: 30px;
-	width: 60px;
+.floatpara {
+    font-size: 1.5rem;
+    line-height: 1.25rem;
+    padding: 2rem;
 }
 
-.navbar-overlay{
-	position:absolute;
-	top: 3px;
-	left: 3px;
-	vertical-align: middle;
-}
-.navbar a{
-	background-color:none;
-	color: #000;
-	text-align: center;
-}
-
-.navbar a:hover{
-	background-color: #DB0407;
-	color: #223E8B;
-	border-radius: 3px;
-	text-align: center;
-	text-decoration-color: chartreuse;
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f7f7f7;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #ddd;
+  flex-wrap: wrap;
 }
 
-/*global*/
-
-#container {
-	max-width: 1160px;
-	padding-bottom: 10px;
-	align-items: center;
-	text-align: center;
-	margin: auto;
-	background-color: #313133
+.navbar-left,
+.navbar-center,
+.navbar-right {
+  display: flex;
+  align-items: center;
+  flex: 1;
 }
 
-.card-color {
-	background-color: #313133;
-	color: white;
+.navbar-left {
+  justify-content: flex-start;
+  padding-left: 0.5rem; /* logo spacing */
 }
 
-#introVideo {
-	position: fixed;
-	top: 0;
-	left: 0;
-	min-width: 100%;
-	min-height: 100%;
-	z-index:-100;
+.navbar-center {
+  justify-content: center;
+  gap: 1.5rem;
 }
 
-.videoOverlay{
-	background-image: radial-gradient(#990202, #313133);
-	z-index:-101;
+.navbar-right {
+  justify-content: flex-end;
+  gap: 0.5rem;
 }
 
-@media (min-aspect-ratio: 16/9) {
-	video {
-	  width: 100%;
-	  height: auto;
-	}
+.logo {
+  height: 60px;
+}
+
+.navbar a {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: .5rem;
+}
+
+.navbar a:hover {
+  color: red;
+}
+
+/* Social icon buttons */
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  color: red;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.social-btn.facebook {
+  background-color: #3b5998;
+  color: white;
+}
+
+.social-btn.facebook:hover {
+  background-color: #2d4373;
+}
+
+.social-btn.instagram {
+  background-color: #e4405f;
+  color: white;
+}
+
+.social-btn.instagram:hover {
+  background-color: #c13546;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
   }
-  @media (max-aspect-ratio: 16/9) {
-	video {
-	  width: auto;
-	  height: 100%;
-	}
+
+  .navbar-left,
+  .navbar-center,
+  .navbar-right {
+    flex: unset;
+    width: 100%;
+    justify-content: center;
+    margin: 0.3rem 0;
   }
-/*   titulos para cada una de las paginas */
 
-/*#titulo{	
-	text-shadow: 2px 2px 6px black;
-	padding: 12px;
-	margin:45px 0px;
+  .logo {
+    height: 60px;
+  }
 }
 
-#titulo h1{
-	text-align:center;
-	font-size: 36px;
+.center-content {
+    display: flex;               /* makes the div a flex container */
+    justify-content: center;     /* centers horizontally */
+    align-items: center;         /* centers vertically */
+    text-align: center;          /* centers inline text inside */
 }
 
-/*   logos de patrocinadores para todas las paguinas */
-
-.patrocinadores {
-	text-align: center;
-	width: 1160px;
+.backimg {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.patrocinadores .anuncio{
-	align-content: center center;
-	margin: 0px;
+.logo-section .logo-rect {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
 }
 
-.patrocinador-1{
-	max-width: 1160px;
-	margin-top: 45px;
-	margin-bottom: 5px;
-	border:none;
-}	
-
-.patrocinador-2{
-	max-width: 1160px;
-	margin-top: 36px;
-	margin-bottom: 15px;
-	border:none;
-	text-align:center;
-	align-items: center center;
+h1, h2, h3, .logo-section {
+  font-family: 'Oswald', sans-serif;
 }
 
-
-.boton{
-	height:18px;
-	background: #e8491d;
-	border-bottom:0;
-	padding-left:20px;
-	padding-right:20px;
-	color:#ffffff;
-	}
-
-/* showcase */ 
-
-.showcase{
-	color:#f4f4f4;
-	padding-top:58px;
-	/*min-width: 450px;*/
-	
+body, p {
+ font-family: 'Oswald', sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
 }
 
-.showcase img{
-	width: 100%;
-	background-size: cover;
+.titlecard {
+    max-width: 50%;
+    max-height: 70%;
+    padding-top: 15px;
 }
 
-#showcase1{
-	padding-bottom:10px;
-	background:url('../voluntiers/feed all.jpg') no-repeat -840px -1152px;
-	background-color: #F91317;
-	text-align:center;
+.countdown-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px;
+  flex-wrap: nowrap; /* prevent vertical stacking */
 }
 
-.p-close{
-	margin-bottom: 21px;
+#countdown {
+  display: flex; /* make the generated boxes flex children */
+  gap: 15px;     /* spacing between boxes */
 }
 
-.p-close h4{
-	margin-top: 21px;
-	text-align: center;
-	
+#countdown > div {
+  background-color: rgba(230, 230, 230, 0.6);
+  border-radius: 8px;
+  padding: 20px 25px;
+  min-width: 80px;
+  text-align: center;
+  color: black;
+  display: flex;
+  flex-direction: column; /* numbers on top, labels below */
+  align-items: center;
 }
 
-.p-close p{
-	margin-bottom: -5px;
+#countdown .simplycountdown-number {
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
 }
 
-.showcase h3{
-	margin-top:401px;
-	margin-bottom:2px;
-	background-color: #FFFFFF;
-}
-
-/* pagina principal 1*/
-
-.intro{
-	padding: 26px;
-	text-align: center;
-	color:red;
-}
-
-.intro h4{
-	text-align:center;
-	font-size: 21px;
-	margin-top:auto;
-}
-
-#boxes {
-	display: flex;
-	align-items: center;
-	text-align:center;
-	width:100%;
-	color: #C0C0C0;
-	max-width: 1160px;
-}
-
-#boxes .box{
-	padding: 15px;
-	margin-top: 21px;
-	margin-bottom: 23px;
-	margin-left: 10px;
-	border:1px #f4f4f4 solid;
-	border-radius: 9px;
-	max-width: 1160px;
-}
-
-/* pagina About 2*/
-
-.about-us{
-	min-width: 450px;
-	padding: 40px 30px; 
-}
-/**/
-/* pagina categories 3*/
-.container-cat {
-	color: white;
-	background-color: #313133;
-	border-radius: 10px;
-	padding: 20px;
-	margin-top: 10px;
-}
-
-
-/* pagina maps 4*/
-
-.custom-select {
-	display: inline-block;
-	position: relative;
-	font-family: Arial, sans-serif;
-	font-size: 14px;
-	color: black;
-	background-color: #dc3545;
-	padding: 8px 16px;
-	border: none;
-	border-radius: 4px;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	cursor: pointer;
-	margin-bottom: 10px;
-}
-
-.custom-select::after {
-	content: '\25BC';
-	position: absolute;
-	top: 50%;
-	right: 12px;
-	transform: translateY(-50%);
-	font-size: 12px;
-	color:black;
-}
-
-	.custom-select option[disabled]:first-child {
-		color: black;
-	}
-
-.stravaweather {
-	margin-top: 200px;
-	;
-}
-
-#mapContainer > img[src*="2022-detail-map.png"],
-#mapContainer > img[src*="2022-dont-park.png"] {
-	background-color: white;
-	padding: 10px;
-}
-
-/* pagina register now 5*/
-
-/* pagina results 6*/
-
-/* pagina sponsors 7*/
-
-/* pagina volunteers 8*/
-
-/* pagina contact 9*/
-
-/* pagina links 10*/
-
-/* boxex */
-
-#contact{
-	background:#0000A0;
-	color: #f4f4f4;
-	padding-top: 27px;
-}
-
-#contact1{
-	background:#0000A0;
-	color: #f4f4f4;
-	padding-top: 27px;
-	}
-
-#contact .box{
-	text-align:center;
-	max-width:100%;
-	padding:5px;
-	margin-bottom:10px;
-	margin-top:27px;
-}
-
-#contact1 .box{
-	text-align:center;
-	max-width:90%;
-	padding:2px;
-	margin-bottom:40px;
-	margin-top:10px;
-}
-
-
-
-
-.cartel{
-	width: 600px;
-	margin:20px;
-	padding: 50px;
-	border:1px #f4f4f4 solid;
-	border-radius: 9px;
-}
-
-/* footer */	
-
-.pie{
-	text-align:center;
-	margin:auto;
-}
-
-.pie p{
-	background:#333;
-	color: #009BFF;
-	min-height:40px;
-}
-
-.container{
-    padding-top: 100px;
-	padding-bottom:50px ;
-}
-h2{
-    text-align: center;
-    padding: 80px;
+#countdown .simplycountdown-label {
+  font-size: 0.8rem;
+  display: block;
+  margin-top: 5px;
 }
 
 .slick-slide{
@@ -413,95 +296,96 @@ h2{
 .slick-initialized .slick-slide{
     display: block;
 }
-.copy{
-    padding-top: 250px;
+.container{
+    padding-top: 100px;
+	padding-bottom:50px ;
+}
+.btn {
+    margin: 2rem 1rem;
+    padding: 1rem !important;
+    font-family: 'Oswald', serif !important;
+}
+.titlecard {
+  font-family: 'Oswald', serif;
+}
+.no-flex {
+  flex: 0 0 auto; /* don’t grow or shrink */
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+/* Fix background color typo and remove height/width restriction */
+#maps {
+  background-color: #f5f5f7;   /* you had f5f5f7 without # */
+  width: 100%;                 /* full width background */
+  padding: 3rem 0;             /* spacing */
 }
 
-@media screen and (max-width: 450px){
-		#About h3{
-		padding-top:15px;
-		padding-bottom: 15px;
-		text-align:center;
-		margin:auto;
-	}
-	
-	#container{
-	max-width: auto;
-	padding-bottom:10px;
-	align-items: center;
-	text-align:center;
-	 
-}
-	
-
-	.intro{
-	margin-top: 63px;
-	margin-bottom: 45px;
-	}
-	
-	.intro h4{
-	text-align:center;
-	font-size: 24px;
-	}
-
-	#About h4{
-		text-align:center;
-		margin:auto;
-	}
-
-	#showcase{
-	
-	}
-	
-	.showcase img{
-	}
-	
-	
-	
-	#showcase1{
-		background:url('../voluntiers/feed all.jpg') no-repeat -960px -1152px;
-	}
-
-	.stravaweather{
-		text-align:center;
-		max-width: auto;
-		margin-bottom: 21px;
-	}
-	
-
-	#containerclick .btn-link{
-		text-align:center;
-		max-width: auto;
-	}
+/* Flex gallery */
+.gallery.map {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
-/* media queries */
-/* #f4f4f4 dark grey White	#FFFFFF*/
-/* newaletter.Blue	#0000FF
-DarkBlue	#0000A0
-LightBlue	#ADD8E6
-Purple	#800080 #FF0000 red, #35424a dark grey. 
-#ffffff white for dots.  #ddd light grey 
-#8B0000 dark red, tomato red #FF6347 
-lightgray / lightgrey	#D3D3D3	rgb(211,211,211)
-silver	               #C0C0C0	rgb(192,192,192)
-darkgray / darkgrey	  #A9A9A9	rgb(169,169,169)
-gray / grey	         #808080	rgb(128,128,128)
-dimgray / dimgray	#696969	rgb(105,105,105)  
-Aqua	#00FFFF	rgb(0, 255, 255)
-Teal	#008080	rgb(0, 128, 128)
-Blue	#0000FF	rgb(0, 0, 255)
-Navy	#000080	rgb(0, 0, 128)       */
+/* Individual anchor boxes */
+.gallery.map a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;  /* control image size */
+  text-decoration: none;
+  color: inherit;
+}
 
+/* Thumbnail images */
+.gallery.map .thumb {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.gallery.map .thumb:hover {
+  transform: scale(1.05);
+}
 
+/* Responsive: stack vertically on narrow screens */
+@media (max-width: 768px) {
+  .gallery.map {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
-/* header.#000000 black. #35424a dark grey. #0c00ff blue. #ffffff white for dots, #e8491d orange  */
+.gallery .thumb {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
 
+.gallery .thumb:hover {
+    transform: scale(1.05);
+}
 
-/* esta me da la altura de la banda donde estan los links */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
 
+footer a {
+    color: #ff6347;
+}
 
-/* me cambia la lista del menu. padding:0 10px[separa los nombres]0 5px;*/
+footer a:hover {
+    text-decoration: none;
+}
 
-
-/* me mueve todo el navegador. margin-top sube los links del menu hacia arriba pero con -20px*/
