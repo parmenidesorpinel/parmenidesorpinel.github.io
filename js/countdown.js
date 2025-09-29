@@ -1,5 +1,5 @@
 simplyCountdown('#countdown', {
-    year: 2025,
+    year: 2026,
     month: 9,
     day: 27,
     hours: 0,
